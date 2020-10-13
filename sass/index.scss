@@ -1,0 +1,101 @@
+.nav-bg-color {
+  background: rgb(53, 74, 95) !important;
+}
+
+.logo-row {
+  border-bottom: 1px solid #eee;
+}
+
+.links {
+  margin: 1rem 0;
+  & a {
+    color: #666;
+  }
+}
+
+.stars {
+  & i {
+    color: gold;
+  }
+}
+
+.sub-heading {
+  padding: 1rem;
+  background: #eee;
+  border-left: 2px solid #111;
+  & p {
+    color: #666;
+  }
+}
+.summary-box {
+  padding: 1rem;
+  background: #f8c58ba1;
+  border: 1px solid #f8c58b;
+  margin-bottom: 1rem;
+  & p {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  & strong {
+    color: dodgerblue;
+  }
+}
+
+.pros-list,
+.cons-list {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid rgba(34, 139, 34, 0.829);
+  border-radius: 5px;
+  margin: 1rem 0;
+  & .heading {
+    background: rgba(34, 139, 34, 0.829);
+    padding: 1rem;
+    border: 0;
+    & h4 {
+      margin-left: 1rem;
+      color: #fff;
+    }
+  }
+  & ul {
+    margin: 1rem 0;
+  }
+}
+.cons-list {
+  border: 5px solid rgba(199, 22, 22, 0.726);
+  & .heading {
+    background: rgba(199, 22, 22, 0.726);
+  }
+}
+
+.review-container {
+  padding: 1rem;
+  background: #eee;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.progress-container {
+  background: #fbfbfb;
+  padding: 1rem;
+  width: 100%;
+}
+
+.btn-tags {
+  & button {
+    margin: 0 0.5rem;
+  }
+}
+
+.ad-tag {
+  background: rgb(53, 74, 95);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  & p {
+    color: #fff;
+    font-weight: 700;
+  }
+}
