@@ -7417,6 +7417,58 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center;
     font-size: 1rem; } }
 
+.nav-red {
+  width: 100%;
+  background: rgba(255, 44, 58, 0.753);
+  padding: 2rem 0; }
+  .nav-red h1 {
+    font-family: "Playfair Display";
+    color: #fff; }
+  .nav-red p {
+    color: #fff; }
+
+.body {
+  background: #eee; }
+  .body .row-bg {
+    background: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 1px 10px #e1e1e1; }
+  .body .form-container,
+  .body .order-container {
+    border: 1px solid #eee;
+    border-radius: 5px; }
+    .body .form-container form,
+    .body .order-container form {
+      border-bottom: 1px solid #eee; }
+    .body .form-container .heading,
+    .body .order-container .heading {
+      border-bottom: 1px solid #eee; }
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  min-height: 100%;
+  padding: 1rem; }
+
+.inner-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; }
+  .inner-grid .col {
+    display: flex;
+    padding: 1rem;
+    background: #eee;
+    border-radius: 3px;
+    box-shadow: inset 0px 1px 5px #ddd; }
+    .inner-grid .col img {
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 5px; }
+
 .spacer-vertical {
   padding: 1rem 0; }
 
