@@ -7245,6 +7245,16 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .header h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: "Playfair Display"; }
+  .header p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff; }
+  .header button {
+    padding: 1rem 2rem; }
 
 .diamond-section {
   background: url("https://images.clickfunnels.com/48/4444e327f042cdbe4a1bd4c49abd87/ad.jpg");
@@ -7255,7 +7265,13 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0; }
+  padding: 4rem 0; }
+  .diamond-section h1 {
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    margin: 2rem 0; }
+    .diamond-section h1 span {
+      color: #ff2c3a; }
 
 .banner-section {
   background: url("https://images.clickfunnels.com/13/5cd102eaf1473dbadff3a9b3bd9a9d/adf.jpg");
@@ -7266,7 +7282,74 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0; }
+  padding: 4rem 0; }
+  .banner-section h1 {
+    color: #fff;
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0; }
+  .banner-section p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center; }
+
+.nav-text p {
+  font-family: "Playfair Display";
+  color: #ff2c3a;
+  margin: 1rem 0; }
+
+.two-col-section h1 {
+  font-family: "Playfair Display";
+  color: #ff2c3a;
+  font-size: 3rem;
+  margin: 1rem 0; }
+
+.two-col-section .btn-step {
+  background: #ff2c3a;
+  color: #fff;
+  padding: 1rem 2rem; }
+
+.video-section {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .video-section h1 {
+    font-family: "Playfair Display";
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 2; }
+    .video-section h1 span {
+      color: #ff2c3a; }
+  .video-section p {
+    color: #666;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem; }
+
+.info-section {
+  padding: 2rem 0;
+  border-top: 1px solid #eee; }
+  .info-section ul {
+    list-style: none; }
+
+@media screen and (max-width: 950px) {
+  .header h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Playfair Display";
+    margin: 1rem; }
+  .header p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #fff; }
+  .header button {
+    padding: 1rem 2rem;
+    margin: 1rem; } }
 
 .spacer-vertical {
   padding: 1rem 0; }
