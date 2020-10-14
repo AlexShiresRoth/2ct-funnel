@@ -7235,6 +7235,60 @@ a.text-dark:hover, a.text-dark:focus {
     color: #fff;
     font-weight: 700; }
 
+.popup {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 999999; }
+  .popup .inner {
+    background: #fff;
+    width: 50vw;
+    min-height: 70vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    position: relative; }
+    .popup .inner .close-btn {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      transition: all 0.3s ease;
+      border-radius: 2px;
+      padding: 1rem;
+      z-index: 2; }
+      .popup .inner .close-btn i {
+        color: #ff2c3a;
+        font-size: 2rem;
+        transition: all 0.3s ease; }
+      .popup .inner .close-btn:hover {
+        cursor: pointer;
+        background: #ff2c3a;
+        color: #fff; }
+        .popup .inner .close-btn:hover i {
+          color: #fff; }
+    .popup .inner img {
+      object-fit: contain; }
+    .popup .inner form {
+      width: 100%; }
+
+.hidden {
+  transform: translateY(-100vh);
+  opacity: 0;
+  visibility: hidden; }
+
 .header {
   background: url("https://images.clickfunnels.com/69/0882164ca44a9eb37e917041677fd8/banner.jpg");
   width: 100%;
@@ -7338,6 +7392,8 @@ a.text-dark:hover, a.text-dark:focus {
     list-style: none; }
 
 @media screen and (max-width: 950px) {
+  .popup .inner {
+    width: 80vw; }
   .header h1 {
     font-size: 3rem;
     color: #fff;
@@ -7349,7 +7405,17 @@ a.text-dark:hover, a.text-dark:focus {
     color: #fff; }
   .header button {
     padding: 1rem 2rem;
-    margin: 1rem; } }
+    margin: 1rem; }
+  section h1,
+  section h3,
+  section h4 {
+    text-align: center;
+    font-size: 2rem; }
+  section p,
+  section ul,
+  section li {
+    text-align: center;
+    font-size: 1rem; } }
 
 .spacer-vertical {
   padding: 1rem 0; }
