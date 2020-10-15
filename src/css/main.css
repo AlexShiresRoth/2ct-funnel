@@ -7238,6 +7238,7 @@ a.text-dark:hover, a.text-dark:focus {
 .popup {
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -7250,11 +7251,11 @@ a.text-dark:hover, a.text-dark:focus {
   transition: all 0.5s ease;
   opacity: 1;
   visibility: visible;
-  z-index: 999999; }
+  z-index: 999999;
+  overflow-y: visible; }
   .popup .inner {
     background: #fff;
-    width: 50vw;
-    min-height: 70vh;
+    width: 45vw;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -7279,8 +7280,12 @@ a.text-dark:hover, a.text-dark:focus {
         color: #fff; }
         .popup .inner .close-btn:hover i {
           color: #fff; }
-    .popup .inner img {
-      object-fit: contain; }
+    .popup .inner .box {
+      display: flex;
+      justify-content: center; }
+      .popup .inner .box img {
+        object-fit: contain;
+        max-width: 70%; }
     .popup .inner form {
       width: 100%; }
 

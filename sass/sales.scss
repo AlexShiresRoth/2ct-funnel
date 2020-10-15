@@ -1,6 +1,7 @@
 .popup {
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -14,10 +15,10 @@
   opacity: 1;
   visibility: visible;
   z-index: 999999;
+  overflow-y: visible;
   & .inner {
     background: #fff;
-    width: 50vw;
-    min-height: 70vh;
+    width: 45vw;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -46,9 +47,15 @@
         }
       }
     }
-    & img {
-      object-fit: contain;
+    & .box {
+      display: flex;
+      justify-content: center;
+      & img {
+        object-fit: contain;
+        max-width: 70%;
+      }
     }
+
     & form {
       width: 100%;
     }
